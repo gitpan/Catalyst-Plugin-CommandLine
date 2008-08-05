@@ -1,9 +1,11 @@
 --- #YAML:1.0
 name:                Catalyst-Plugin-CommandLine
-version:             0.03
+version:             0.05
 abstract:            Catalyst plugin to make  available also for scripts.
 license:             ~
-generated_by:        ExtUtils::MakeMaker version 6.36
+author:              
+    - Jozef Kutej <jozef@kutej.net>
+generated_by:        ExtUtils::MakeMaker version 6.42
 distribution_type:   module
 requires:     
     Catalyst::Request:             0
@@ -16,7 +18,5 @@ requires:
     UNIVERSAL:                     0
     URI::http:                     0
 meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
-    version: 1.2
-author:
-    - Jozef Kutej <jozef@kutej.net>
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3

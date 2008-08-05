@@ -38,7 +38,7 @@ use Catalyst::Request;
 use Catalyst::Response;
 use URI::http;
 
-our $VERSION = "0.03";
+our $VERSION = "0.05";
 
 =head1 FUNCTIONS
 
@@ -80,6 +80,7 @@ sub commandline {
 		'base'    => $base,
 		'uri'     => $uri,
 		'secure'  => 1,
+		'headers' => HTTP::Headers->new,
 	}));
 	$c->response(Catalyst::Response->new({
 		'cookies' => {},
@@ -87,7 +88,8 @@ sub commandline {
 	}));
 
 	# execute the root auto method
-	$c->controller('Root')->auto($c);
+	$c->controller('Root')->auto($c)
+	    if $c->controller('Root')->can('auto');
 	
 	return $c;
 }
@@ -102,7 +104,7 @@ Returns true/false if catalyst is running in commandline mode.
 sub commandline_mode {
 	my $c = shift;
 	
-	return 1 if $c->stash->{'CommandLine'};
+	return 1 if ($c->stash and $c->stash->{'CommandLine'});
 	return 0;
 }
 
@@ -110,7 +112,7 @@ sub commandline_mode {
 
 =head1 AUTHOR
 
-Jozef Kutej - E<lt>jozef@kutej.netE<gt>
+Jozef Kutej - E<lt>jkutej@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 

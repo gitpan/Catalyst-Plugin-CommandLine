@@ -14,21 +14,21 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 8a9d7032711fc284474f2eab22d87c22d9d0b4ba Changes
+SHA1 57e20009c4147c3f1f57647626bc6481ef091148 Changes
 SHA1 1bc062e6340771dd36120c12cfee0f9c66147de0 MANIFEST
-SHA1 d24315120ab92ea40bf288be43c3036814a191f4 META.yml
+SHA1 67b6f085181adf48b93d2f8549ef3ec68dae349b META.yml
 SHA1 ab2880e4fbf575772059b6fd115539921c59e502 Makefile.PL
 SHA1 3256f285126d01aed9c5e426e29d2ec927a9b6c5 README
-SHA1 56001e4d463138fd6d707c1cc364faa36aaedb4a lib/Catalyst/Plugin/CommandLine.pm
+SHA1 9aadde9e1dc3eaca5959ed09be4cfe0f1d57ef27 lib/Catalyst/Plugin/CommandLine.pm
 SHA1 41533fbd463e42d2ecf1e119eca910c16809d13e t/00-distribution.t
 SHA1 4aeb184c9bed26ab6c3be1ebdb8470c0cb353b1f t/00-signature.t
 SHA1 f535313129b685cdaba209ff51482f8360d6f9e6 t/01-Catalyst-Plugin-CommandLine.t
 SHA1 3a8fa081129a583da1dec4b5882e815f350a497b t/pod-coverage.t
 SHA1 1c2221234c6e97bd628d78e90052efb1a794e6ec t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
+Version: GnuPG v1.4.9 (GNU/Linux)
 
-iD8DBQFHLKH2uzJBASXpqvsRAshQAKCV2OuADhwsNdFilATa0oCI6vXhqQCeIPoE
-Mdaz/1aWsWTnr0sBhr2F20M=
-=KZp+
+iEYEARECAAYFAkiYThYACgkQuzJBASXpqvsKrQCdFerVqgvxgW0QhvIACiqCB5X9
+kuAAn3G8vzzPgj3BYHyBdZ40olWg0eHm
+=3uzt
 -----END PGP SIGNATURE-----
